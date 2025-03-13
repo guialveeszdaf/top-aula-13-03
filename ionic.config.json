@@ -1,0 +1,7 @@
+{
+  "name": "git",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
