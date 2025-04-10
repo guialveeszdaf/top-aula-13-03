@@ -10,6 +10,8 @@ interface Porta {
   premio: string
 }
 
+let portas: Porta[] = []
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -18,36 +20,32 @@ interface Porta {
 })
 export class HomePage {
 
-  portas: Porta[] = []
+  
 
   constructor() {}
 
-  porta1() {
+  portass() {
 
     const premio1:Porta = {
       id: 1,
     premio: 'cabra'
     }
-
-    this.portas.push(premio1)
-    console.log(this.porta1);
     
-  }
-
-  porta2() {
+    
+    const premio3:Porta = {
+      id: 3,
+      premio: 'cabra'
+    }
 
     const premio2:Porta = {
       id: 2,
       premio: 'carro'
     }
+
+    portas.push(premio1, premio3, premio2)
+
+    
+
   }
 
-  porta3() {
-
-    const premio3:Porta = {
-      id: 3,
-      premio: 'cabra'
-    }
-  }
 }
-
